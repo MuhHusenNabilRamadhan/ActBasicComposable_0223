@@ -39,5 +39,87 @@ fun TugasLogin(modifier: Modifier = Modifier) {
     // Simpan di res/drawable dengan nama: foto_kabah.jpg
     val gambarKementrian = painterResource(id = R.drawable.logo_kementrian)
 
+    Box(modifier = modifier.fillMaxSize()) {
 
+        // Background full screen
+        Image(
+            painter = gambarBackground,
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 60.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            // Judul
+            Text(
+                text = "Login",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                color = Color.White
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Logo kampus
+            Image(
+                painter = gambarLogo,
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .size(150.dp)
+                    .clip(CircleShape)
+            )
+
+            Spacer(modifier = Modifier.height(90.dp))
+
+            // Identitas
+            Text(
+                text = "Nama",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+            Text(
+                text = "Muh Husen Nabil Ramadhan",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+            Text(
+                text = "20240140223",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // Lingkaran putih berisi foto Kabah
+            Box(
+                modifier = Modifier
+                    .size(300.dp)
+                    .clip(CircleShape)
+                    .background(color = Color(0xFFE8E8F5))
+                    .border(width = 3.dp, color = Color.White, shape = CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = gambarKementrian,
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier.fillMaxSize()
+                )
+            }
+        }
+    }
 }
