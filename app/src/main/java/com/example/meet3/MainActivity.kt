@@ -13,5 +13,8 @@ import androidx.compose.runtime.Composable
 import com.example.meet3.ui.theme.Meet3Theme
 
 class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
 
 }
