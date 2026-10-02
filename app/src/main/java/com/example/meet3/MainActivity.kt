@@ -22,7 +22,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    // Memanggil tampilan dari file TugasLogin.kt
+                    TugasLogin()
                 }
             }
         }
