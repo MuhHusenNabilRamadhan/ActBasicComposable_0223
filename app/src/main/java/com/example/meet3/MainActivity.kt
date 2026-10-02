@@ -30,3 +30,10 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun TugasLoginPreview() {
+    Meet3Theme {
+        TugasLogin()
+    }
+}
