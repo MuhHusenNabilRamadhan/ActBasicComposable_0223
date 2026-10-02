@@ -27,5 +27,9 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
+    // ===== GAMBAR 1: Background (foto masjid, memenuhi layar) =====
+    // Simpan di res/drawable dengan nama: bg_masjid.jpg
+    val gambarBackground = painterResource(id = R.drawable.images)
+
 
 }
