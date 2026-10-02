@@ -35,5 +35,9 @@ fun TugasLogin(modifier: Modifier = Modifier) {
     // Simpan di res/drawable dengan nama: logo_umy.png
     val gambarLogo = painterResource(id = R.drawable.logo_umy)
 
+    // ===== GAMBAR 3: Foto Kabah (di dalam lingkaran bawah) =====
+    // Simpan di res/drawable dengan nama: foto_kabah.jpg
+    val gambarKementrian = painterResource(id = R.drawable.logo_kementrian)
+
 
 }
